@@ -2,7 +2,7 @@ Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachau
 =========================
 
 Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
-
+<!-- 
 ## How to use
  - Place a image in `/img/portfolio/`
  - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
@@ -29,4 +29,4 @@ View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-the
 ![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
 ---------
-For more details, read the [documentation](http://jekyllrb.com/)
+For more details, read the [documentation](http://jekyllrb.com/) -->
