@@ -1,5 +1,7 @@
-// module.exports = {
-//   publicPath: "Bananajia.github.io",
-//   assetsDir: "Bananajia.github.io",
-//   outputDir: "dist"
-// }
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/Bananajia.github.io/'
+    : '/',
+  assetsDir: "/src/assets",
+  outputDir: "dist"
+}
