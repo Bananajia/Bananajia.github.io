@@ -6,7 +6,7 @@
         
         <div class="area">
             <!-- debug(imgPaths[i-1])-->
-            <div @click="$router.push(pushRouter[i-1]) " v-for="i in 4" :key="i" class="card">
+            <div @click="$router.push(pushRouter[i-1]) " v-for="i in 5" :key="i" class="card">
                 <PortfolioCard :imgPath="imgPaths[i-1]" :title="titles[i-1]"/>
             </div>
 
@@ -48,26 +48,30 @@ export default {
     data(){
         return{
             imgPaths:[
-                require('./../../assets/picadon.png'),
                 require('./../../assets/rjgz.png'),
+                require('./../../assets/laser.jpeg'),
+                require('./../../assets/picadon.png'),
                 require('./../../assets/babe.jpeg'),
-                require('./../../assets/Cook.jpeg')
+                require('./../../assets/Cook.jpeg'),
+
                 // 'https://i.ibb.co/Hz1KYZg/picadon.png',
                 // 'https://i.ibb.co/ZLLb4Hm/rjgz.png',
                 // 'https://i.ibb.co/c6QmGwc/babe.jpg',
                 // 'https://i.ibb.co/0VStw8J/Cook.jpg'
                 ],
             titles:[
-                'Web Application',
-                'Machine Learning',
-                'Photograpy',
+                'Algorithms',
+                'DIY electronic kits',
+                'Projects',
+                'Photography',
                 'Cooking'
             ],
             pushRouter:[
-                '/webapp',
                 '/ml',
+                '/diy',
+                '/webapp',
                 '/photo',
-                '/cook'
+                '/cook',
             ]
         }
     },

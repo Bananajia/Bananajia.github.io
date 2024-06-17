@@ -1,154 +1,238 @@
 <template>
-<!-- style from
+  <!-- style from
     https://www.behance.net/gallery/34183081/Personal-CV-or-VCard?tracking_source=search_projects_recommended%7Cresume%20web
- -->
+  -->
   <div id="app">
     <div class="left-side">
-      <router-link style="text-decoration: none; color: inherit;" to="/"><div class="logo">
-        席佳<p>HOME</p>
-      </div>
-      </router-link> 
+      <router-link style="text-decoration: none; color: inherit;" to="/">
+        <div class="logo">
+          席佳
+          <p>HOME</p>
+        </div>
+      </router-link>
 
       <div class="contact-info">
         <p class="contact-title">Email</p>
         <p class="contact-content">bananajiajia@gmail.com</p>
         <p class="contact-title">Phone</p>
-         <p class="contact-content">+45 50654380</p>
+        <p class="contact-content">+45 50654380</p>
         <p class="contact-title">Find Me On</p>
         <div class="social-media">
-          
-          <a href="https://www.linkedin.com/in/xi-jia-51673a171/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100009823698804"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com/xijiajiajia/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/xi-jia-51673a171/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100009823698804">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/xijiajiajia/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
         </div>
-      </div> 
+      </div>
 
       <div class="inspired">
-        This page is inspired by <a href="https://www.behance.net/gallery/34183081/Personal-CV-or-VCard?tracking_source=search_projects_recommended%7Cresume%20web"><i class="fa fa-behance" aria-hidden="true"></i></a>
-      </div>     
+        This page is inspired by
+        <a
+          href="https://www.behance.net/gallery/34183081/Personal-CV-or-VCard?tracking_source=search_projects_recommended%7Cresume%20web"
+        >
+          <i class="fa fa-behance" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
 
-    
-    
     <div class="right-side">
       <!-- <div class="nav">
         三
-      </div> -->
+      </div>-->
       <transition name="slide-left" mode="out-in">
         <router-view></router-view>
       </transition>
       <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
+      <router-link to="/about">About</router-link>-->
     </div>
-
   </div>
-    <!-- <router-view/> -->
+  <!-- <router-view/> -->
 </template>
 <script>
-
-
-export default {
-    
-}
+export default {};
 </script>
 <style>
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-a{
-  text-decoration:none;
-  color:#fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
-
 </style>
 
 
 <style scoped>
-
-#app{
-  width:100%;
+#app {
+  width: 100%;
   /* height: 100%; */
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
 }
-.left-side{
-  width:30%;
-  height: 100vh;
-  background-color: #4B22FF;
-  
+.left-side {
+  width: 30%;
+  height: 180vh;
+  background-color: #4b22ff;
+
   /* outline:3px solid black; */
   /* border:3px solid black; */
   /* width: 30%;
   height: 100%; */
 }
 
-.logo{
+.logo {
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
   margin: 10vh 0 0 5vw;
-  letter-spacing:10px;
+  letter-spacing: 10px;
 }
-.logo p{
+.logo p {
   font-size: 15px;
-  color: #FFF;
+  color: #fff;
   /* margin: 10vh 0 0 5vw; */
   /* letter-spacing:10px; */
 }
 
-.contact-info{
+.contact-info {
   position: absolute;
   bottom: 0;
   color: #fff;
   margin: 0 0 10vh 5vw;
 }
 
-.inspired{
+.inspired {
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -157,27 +241,27 @@ a{
   margin: 0 0 1vh 5vw;
 }
 
-.contact-info a{
-  text-decoration:none;
-  color:#fff;
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.contact-title{
+.contact-title {
   font-weight: bold;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 
-.contact-content{
-  margin-bottom:16px;
+.contact-content {
+  margin-bottom: 16px;
 }
 
-.social-media{
-  letter-spacing:20px;
+.social-media {
+  letter-spacing: 20px;
   font-size: 5vh;
 }
 
-.right-side{
-  width:70%;
+.right-side {
+  width: 70%;
   border: 1 solid black;
   /* widows: 69%;
   height: 100%; */
