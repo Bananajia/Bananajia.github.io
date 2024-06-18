@@ -196,14 +196,14 @@ a {
 <style scoped>
 #app {
   width: 100%;
-  /* height: 100%; */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* 确保左右侧栏不换行 */
+  align-items: stretch; /* 新增：使子项填充父容器的高度 */
   justify-content: center;
 }
+
 .left-side {
   width: 30%;
-  height: 180vh;
   background-color: #4b22ff;
 
   /* outline:3px solid black; */
@@ -262,7 +262,7 @@ a {
 
 .right-side {
   width: 70%;
-  border: 1 solid black;
+  /* border: 1px solid black; */
   /* widows: 69%;
   height: 100%; */
 }

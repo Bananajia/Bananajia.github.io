@@ -1,53 +1,39 @@
 <template>
-    <div class="card" v-on:mouseover="showList = true" v-on:mouseout="showList = false">
-        <ul v-if="showList">
-            <li v-for="(item, index) in listItems" :key="index">{{ item }}</li>
-        </ul>
-        <slot v-else></slot>
-    </div>
+  <div
+    class="card"
+    v-on:mouseover="showList = true"
+    v-on:mouseout="showList = false"
+    @click="goToPage"
+  >
+    <l v-if="showList">
+      <li v-for="(item, index) in listItems" :key="index">{{ item }}</li>
+    </l>
+    <slot v-else></slot>
+  </div>
 </template>
 
 <script>
 export default {
-    props: {
-        listItems: {
-            type: Array,
-            required: true
-        }
+  props: {
+    listItems: {
+      type: Array,
+      required: true
     },
-    data() {
-        return {
-            showList: false
-        }
+    redirectUrl: {
+      // Add a new prop for the redirect URL
+      type: String,
+      required: true
     }
-}
+  },
+  data() {
+    return {
+      showList: false
+    };
+  },
+  methods: {
+    goToPage() {
+      this.$router.push(this.redirectUrl); // Use Vue Router to navigate
+    }
+  }
+};
 </script>
-
-<style scoped>
-.card{
-    margin:50px;
-    height: 230px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 350px;
-    /* border: 1px solid black; */
-    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.2);
-    transition: 0.5s;
-    color: black;
-    /* margin-right:0px; */
-}
-
-.card img{
-    border-radius: 20px;
-    height: 90%;
-    width:100%;
-}
-
-.card .name{
-    text-align: center;
-    margin:10px;
-}
-.card:hover{
-    transform: translateY(-3px);
-    cursor: pointer;
-}

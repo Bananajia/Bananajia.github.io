@@ -67,6 +67,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Works/DIY.vue')
   },
   {
+    path: '/laser-piano',
+    name: 'LaserPiano',
+    component: () => import('../views/Works/projects/LaserPiano.vue')
+  },
+  {
     path: '/cook',
     name: 'Cook',
     // route level code-splitting
