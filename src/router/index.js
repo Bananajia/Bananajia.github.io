@@ -72,6 +72,11 @@ const routes = [
     component: () => import('../views/Works/projects/LaserPiano.vue')
   },
   {
+    path: '/jian24',
+    name: 'Jian24',
+    component: () => import('../views/Works/projects/Jian24.vue')
+  },
+  {
     path: '/cook',
     name: 'Cook',
     // route level code-splitting

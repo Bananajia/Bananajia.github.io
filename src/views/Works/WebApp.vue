@@ -1,11 +1,11 @@
 <template>
   <div class="webapp">
     <div class="cards">
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
+      <HoverList :listItems="['Low Code Generator UI Library', 'Full stack', 'NestJs']">
         <img src="@/assets/penni.png" alt />
         <div class="name">Web Widget + Affiliate Platform</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
+      <HoverList :listItems="['Full stack developer', 'Deployment', 'Build from scratch']">
         <img src="@/assets/picadon_work.png" alt />
         <div class="name">Rent Investment WebApp</div>
       </HoverList>

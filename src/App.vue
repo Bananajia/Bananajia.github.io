@@ -3,52 +3,54 @@
     https://www.behance.net/gallery/34183081/Personal-CV-or-VCard?tracking_source=search_projects_recommended%7Cresume%20web
   -->
   <div id="app">
-    <div class="left-side">
-      <router-link style="text-decoration: none; color: inherit;" to="/">
-        <div class="logo">
-          席佳
-          <p>HOME</p>
-        </div>
-      </router-link>
+    <div class="container">
+      <div class="left-side">
+        <router-link style="text-decoration: none; color: inherit;" to="/">
+          <div class="logo">
+            席佳
+            <p>HOME</p>
+          </div>
+        </router-link>
 
-      <div class="contact-info">
-        <p class="contact-title">Email</p>
-        <p class="contact-content">bananajiajia@gmail.com</p>
-        <p class="contact-title">Phone</p>
-        <p class="contact-content">+45 50654380</p>
-        <p class="contact-title">Find Me On</p>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/xi-jia-51673a171/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100009823698804">
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/xijiajiajia/">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <p class="contact-content">bananajiajia@gmail.com</p>
+          <p class="contact-title">Phone</p>
+          <p class="contact-content">+45 50654380</p>
+          <p class="contact-title">Find Me On</p>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/xi-jia-51673a171/">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100009823698804">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/xijiajiajia/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="inspired">
+          This page is inspired by
+          <a
+            href="https://www.behance.net/gallery/34183081/Personal-CV-or-VCard?tracking_source=search_projects_recommended%7Cresume%20web"
+          >
+            <i class="fa fa-behance" aria-hidden="true"></i>
           </a>
         </div>
       </div>
 
-      <div class="inspired">
-        This page is inspired by
-        <a
-          href="https://www.behance.net/gallery/34183081/Personal-CV-or-VCard?tracking_source=search_projects_recommended%7Cresume%20web"
-        >
-          <i class="fa fa-behance" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="right-side">
-      <!-- <div class="nav">
+      <div class="right-side">
+        <!-- <div class="nav">
         三
-      </div>-->
-      <transition name="slide-left" mode="out-in">
-        <router-view></router-view>
-      </transition>
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>-->
+        </div>-->
+        <transition name="slide-left" mode="out-in">
+          <router-view></router-view>
+        </transition>
+        <!-- <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>-->
+      </div>
     </div>
   </div>
   <!-- <router-view/> -->
@@ -194,7 +196,7 @@ a {
 
 
 <style scoped>
-#app {
+.container {
   width: 100%;
   display: flex;
   flex-wrap: nowrap; /* 确保左右侧栏不换行 */

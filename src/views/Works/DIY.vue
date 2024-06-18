@@ -5,7 +5,7 @@
         <img src="@/assets/laser.jpeg" alt />
         <div class="name">Laser Keyboard/Laser Piano</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
+      <HoverList :listItems="['51 microcontroller', 'LED', 'Hardware']">
         <img src="@/assets/eletronic_cake.jpeg" alt />
         <div class="name">Electronic Cake</div>
       </HoverList>

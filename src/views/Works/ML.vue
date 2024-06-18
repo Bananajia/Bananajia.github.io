@@ -1,28 +1,44 @@
 <template>
   <div class="ML">
     <div class="cards">
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
+      <HoverList
+        :listItems="['Deep learning', 'Image Collections', 'Testing', 'ResNet', 'YOLO', 'Wanted to start Video Analysis', 'Too expensive to do 3D object recognition']"
+        redirect-url="jian24"
+      >
         <img src="@/assets/jian24.jpg" alt />
         <div class="name">Self-Service Supermarket</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
-        <img src="@/assets/rjgz.png" alt />
+      <HoverList :listItems="['PICO', 'Machine Learning', 'ARM Chip', 'Integrated inside Camera']">
+        <a href="https://arxiv.org/abs/1305.4537">
+          <img src="@/assets/rjgz.png" alt />
+        </a>
+
         <div class="name">Face Detection</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
+      <HoverList :listItems="['OpenCV', 'Find Circle ', 'Find Contours']">
         <img src="@/assets/helloear1.jpg" alt />
         <div class="name">Ear Detection</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
-        <img src="@/assets/rjgz.png" alt />
+      <HoverList
+        :listItems="['Deep Learning', 'CNN', 'ARM Chips', 'Write CNN by pure C on Chips', 'Integrated with Camera']"
+      >
+        <a href="https://arxiv.org/abs/1604.02878">
+          <img src="@/assets/rjgz.png" alt />
+        </a>
         <div class="name">Face Recognition</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
-        <img src="@/assets/nlp.png" alt />
+      <HoverList :listItems="['NLP', 'RA for KU Workshop', 'Data Scraping']">
+        <a href="https://github.com/Bananajia/SNA/blob/main/sna-en.ipynb">
+          <img src="@/assets/nlp.png" alt />
+        </a>
         <div class="name">SNA (semantic network analysis)</div>
       </HoverList>
-      <HoverList :listItems="['Item 1', 'Item 2', 'Item 3']">
-        <img src="@/assets/XJ15.jpg" alt />
+      <HoverList
+        :listItems="['Sustainability and a 20-year sustainable development plan', 'Mathematic']"
+      >
+        <a :href="pdfLink" target="_blank">
+          <img src="@/assets/XJ15.jpg" alt />
+        </a>
         <div class="name">Mathematical Modeling Competition</div>
       </HoverList>
     </div>
@@ -30,13 +46,19 @@
 </template>
 
 <script>
+import pdfLink from "@/assets/math.pdf";
 import HoverList from "../../components/HoverList.vue";
 
 export default {
   components: {
     HoverList
   },
-  name: "ML"
+  name: "ML",
+  data() {
+    return {
+      pdfLink: pdfLink
+    };
+  }
 };
 </script>
 
