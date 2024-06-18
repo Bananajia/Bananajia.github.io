@@ -8,39 +8,43 @@
         <img src="@/assets/jian24.jpg" alt />
         <div class="name">Self-Service Supermarket</div>
       </HoverList>
-      <HoverList :listItems="['PICO', 'Machine Learning', 'ARM Chip', 'Integrated inside Camera']">
-        <a href="https://arxiv.org/abs/1305.4537">
+      <a href="https://arxiv.org/abs/1305.4537">
+        <HoverList
+          :listItems="['PICO', 'Machine Learning', 'ARM Chip', 'Integrated inside Camera']"
+        >
           <img src="@/assets/rjgz.png" alt />
-        </a>
 
-        <div class="name">Face Detection</div>
-      </HoverList>
+          <div class="name">Face Detection</div>
+        </HoverList>
+      </a>
+
       <HoverList :listItems="['OpenCV', 'Find Circle ', 'Find Contours']">
         <img src="@/assets/helloear1.jpg" alt />
         <div class="name">Ear Detection</div>
       </HoverList>
-      <HoverList
-        :listItems="['Deep Learning', 'CNN', 'ARM Chips', 'Write CNN by pure C on Chips', 'Integrated with Camera']"
-      >
-        <a href="https://arxiv.org/abs/1604.02878">
+      <a href="https://arxiv.org/abs/1604.02878">
+        <HoverList
+          :listItems="['Deep Learning', 'CNN', 'ARM Chips', 'Write CNN by pure C on Chips', 'Integrated with Camera']"
+        >
           <img src="@/assets/rjgz.png" alt />
-        </a>
-        <div class="name">Face Recognition</div>
-      </HoverList>
-      <HoverList :listItems="['NLP', 'RA for KU Workshop', 'Data Scraping']">
-        <a href="https://github.com/Bananajia/SNA/blob/main/sna-en.ipynb">
+          <div class="name">Face Recognition</div>
+        </HoverList>
+      </a>
+      <a href="https://github.com/Bananajia/SNA/blob/main/sna-en.ipynb">
+        <HoverList :listItems="['NLP', 'RA for KU Workshop', 'Data Scraping']">
           <img src="@/assets/nlp.png" alt />
-        </a>
-        <div class="name">SNA (semantic network analysis)</div>
-      </HoverList>
-      <HoverList
-        :listItems="['Sustainability and a 20-year sustainable development plan', 'Mathematic']"
-      >
-        <a :href="pdfLink" target="_blank">
+          <div class="name">SNA (semantic network analysis)</div>
+        </HoverList>
+      </a>
+
+      <a :href="pdfLink" target="_blank">
+        <HoverList
+          :listItems="['Sustainability and a 20-year sustainable development plan', 'Mathematic']"
+        >
           <img src="@/assets/XJ15.jpg" alt />
-        </a>
-        <div class="name">Mathematical Modeling Competition</div>
-      </HoverList>
+          <div class="name">Mathematical Modeling Competition</div>
+        </HoverList>
+      </a>
     </div>
   </div>
 </template>
