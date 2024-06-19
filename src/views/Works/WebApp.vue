@@ -1,6 +1,12 @@
 <template>
   <div class="webapp">
     <div class="cards">
+      <HoverList
+        :listItems="['Pulsar - AWS', 'Infrastructure', 'GitHub Actions', 'Observability - log shipper', 'Testing - design how we do test', 'Domain DD pure spark python design - ADR', 'Generative AI Hackathon', 'Spare time - Danish learning mobile app']"
+      >
+        <img src="@/assets/legoStitch.jpg" alt />
+        <div class="name">The LEGO Group</div>
+      </HoverList>
       <HoverList :listItems="['Low Code Generator UI Library', 'Full stack', 'NestJs']">
         <img src="@/assets/penni.png" alt />
         <div class="name">Web Widget + Affiliate Platform</div>
